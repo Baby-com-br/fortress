@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+
+require "fortress"
+
+config_file = ARGV[0]
+
+if config_file.nil?
+  puts "Usage: fortress path/to/config/file"
+  exit 1
+end
