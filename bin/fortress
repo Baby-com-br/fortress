@@ -11,3 +11,5 @@ end
 
 runner = Fortress::Runner.new config_file
 runner.run
+
+exit 1 if !runner.all_passing?
