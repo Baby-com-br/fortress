@@ -1,0 +1,18 @@
+- test:
+    name: "My first test"
+    url: "http://url/for/first/test"
+    concurrent_users: 12
+    test_duration: "1M"
+    expected_transaction_rate: 10
+- test:
+    name: "My second test"
+    url: "http://url/for/second/test"
+    concurrent_users: 14
+    test_duration: "2M"
+    expected_transaction_rate: 20
+- test:
+    name: "My third test"
+    url: "http://url/for/third/test"
+    concurrent_users: 16
+    test_duration: "3M"
+    expected_transaction_rate: 30

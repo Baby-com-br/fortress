@@ -8,3 +8,6 @@ if config_file.nil?
   puts "Usage: fortress path/to/config/file"
   exit 1
 end
+
+runner = Fortress::Runner.new config_file
+runner.run
