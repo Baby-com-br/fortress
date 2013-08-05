@@ -23,7 +23,7 @@ module Fortress
 
     def print_failure(stream)
       return if !has_failed? || @parser.nil?
-      stream << "Expected a transaction rate of #{expected_transaction_rate}, got #{@parser.transaction_rate}"
+      stream << "Test #{name}: Expected a transaction rate of #{expected_transaction_rate}, got #{@parser.transaction_rate}\n"
     end
 
     private
